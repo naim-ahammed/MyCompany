@@ -3,8 +3,7 @@ import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-
-
+        
         int div = 0;
         boolean validInput;
         do{
@@ -20,11 +19,11 @@ public class Test {
             } catch (ArithmeticException ae) {
                 System.out.println( "Exeption Generated"+ae.getMessage());
             } catch (InputMismatchException ime) {
+                validInput = false;
                 System.out.println("Invlaid input");
             }
         }while (!validInput);
-
-
+        
         System.out.println("Result: "+div);
     }
 }
